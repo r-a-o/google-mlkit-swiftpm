@@ -100,12 +100,10 @@ let package = Package(
       ]),
   ],
   dependencies: [
-    .package(url: "https://github.com/google/promises.git", "2.1.0"..<"3.0.0"),
     .package(url: "https://github.com/google/GoogleDataTransport.git", "9.1.4"..<"10.0.0"),
     .package(url: "https://github.com/google/GoogleUtilities.git", "7.7.1"..<"8.0.0"),
     .package(url: "https://github.com/google/gtm-session-fetcher.git", "1.7.2"..<"2.1.0"),
-    .package(url: "https://github.com/firebase/nanopb.git", "2.30909.0"..<"2.30910.0"),
-    .package(url: "https://github.com/ZipArchive/ZipArchive.git", from: "2.4.2"),
+    .package(url: "https://github.com/ZipArchive/ZipArchive.git", from: "2.4.2")
   ],
   targets: [
     .binaryTarget(name: "MLImage", url: "https://github.com/d-date/google-mlkit-swiftpm/releases/download/3.2.0/MLImage.xcframework.zip", checksum: "d360820204628a8d6d9a915d0bd9ed78aec6ed0eeed7c84c1e78bd85909bbe37"),
@@ -192,8 +190,6 @@ let package = Package(
         .product(name: "GULUserDefaults", package: "GoogleUtilities"),
         .product(name: "GTMSessionFetcher", package: "gtm-session-fetcher"),
         .product(name: "GoogleDataTransport", package: "GoogleDataTransport"),
-        .product(name: "nanopb", package: "nanopb"),
-        .product(name: "FBLPromises", package: "promises"),
       ]),
     .target(
       name: "SSZipArchive",
