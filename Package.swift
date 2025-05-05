@@ -74,17 +74,17 @@ let package = Package(
       url:
         "https://github.com/d-date/google-mlkit-swiftpm/releases/download/6.0.0/GoogleToolboxForMac.xcframework.zip",
       checksum: "edf443ff28f9e4c28998871d2bd11654f43de2e8e81b645ecb7de14d9d79fc96"),
-//    .binaryTarget(
-//      name: "GoogleUtilitiesComponents",
-//      url:
-//        "https://github.com/d-date/google-mlkit-swiftpm/releases/download/6.0.0/GoogleUtilitiesComponents.xcframework.zip",
-//      checksum: "f34db62a980a77f68ee1ccb995edffdf5e68a758a521cdcd203bff5efb2d1722"),
+    .binaryTarget(
+      name: "GoogleUtilitiesComponents",
+      url:
+        "https://github.com/d-date/google-mlkit-swiftpm/releases/download/6.0.0/GoogleUtilitiesComponents.xcframework.zip",
+      checksum: "f34db62a980a77f68ee1ccb995edffdf5e68a758a521cdcd203bff5efb2d1722"),
     .target(
       name: "Common",
       dependencies: [
         "MLKitCommon",
         "GoogleToolboxForMac",
-//        "GoogleUtilitiesComponents",
+        "GoogleUtilitiesComponents",
         .product(name: "GULAppDelegateSwizzler", package: "GoogleUtilities"),
         .product(name: "GULEnvironment", package: "GoogleUtilities"),
         //.product(name: "GULISASwizzler", package: "GoogleUtilities"),
