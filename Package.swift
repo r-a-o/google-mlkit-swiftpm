@@ -6,9 +6,9 @@ let package = Package(
   name: "GoogleMLKitSwiftPM",
   platforms: [.iOS(.v17)],
   products: [
-//    .library(
-//      name: "MLKitBarcodeScanning",
-//      targets: ["MLKitBarcodeScanning", "MLImage", "MLKitVision", "Common"]),
+    .library(
+      name: "MLKitBarcodeScanning",
+      targets: ["MLKitBarcodeScanning", "MLImage", "MLKitVision", "Common"]),
     .library(
       name: "MLKitFaceDetection",
       targets: ["MLKitFaceDetection", "MLImage", "MLKitVision", "Common"]),
@@ -49,11 +49,11 @@ let package = Package(
       url:
         "https://github.com/d-date/google-mlkit-swiftpm/releases/download/6.0.0/MLImage.xcframework.zip",
       checksum: "3c4a161c260d4e3014bcf3bd80febf09aef417a4b6cc4154e316ae2ac886443e"),
-//    .binaryTarget(
-//      name: "MLKitBarcodeScanning",
-//      url:
-//        "https://github.com/d-date/google-mlkit-swiftpm/releases/download/6.0.0/MLKitBarcodeScanning.xcframework.zip",
-//      checksum: "6514700529f77db2ad6bd899e7f5e70abccde09af9308f12c5cdcaaeb25e94fa"),
+    .binaryTarget(
+      name: "MLKitBarcodeScanning",
+      url:
+        "https://github.com/d-date/google-mlkit-swiftpm/releases/download/6.0.0/MLKitBarcodeScanning.xcframework.zip",
+      checksum: "6514700529f77db2ad6bd899e7f5e70abccde09af9308f12c5cdcaaeb25e94fa"),
     .binaryTarget(
       name: "MLKitCommon",
       url:
@@ -87,7 +87,7 @@ let package = Package(
         "GoogleUtilitiesComponents",
         .product(name: "GULAppDelegateSwizzler", package: "GoogleUtilities"),
         .product(name: "GULEnvironment", package: "GoogleUtilities"),
-        .product(name: "GULISASwizzler", package: "GoogleUtilities"),
+        //.product(name: "GULISASwizzler", package: "GoogleUtilities"),
         .product(name: "GULLogger", package: "GoogleUtilities"),
         .product(name: "GULMethodSwizzler", package: "GoogleUtilities"),
         .product(name: "GULNSData", package: "GoogleUtilities"),
