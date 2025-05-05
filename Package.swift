@@ -4,20 +4,20 @@ import PackageDescription
 
 let package = Package(
   name: "GoogleMLKitSwiftPM",
-  platforms: [.iOS(.v14)],
+  platforms: [.iOS(.v17)],
   products: [
-    .library(
-      name: "MLKitBarcodeScanning",
-      targets: ["MLKitBarcodeScanning", "MLImage", "MLKitVision", "Common"]),
+//    .library(
+//      name: "MLKitBarcodeScanning",
+//      targets: ["MLKitBarcodeScanning", "MLImage", "MLKitVision", "Common"]),
     .library(
       name: "MLKitFaceDetection",
       targets: ["MLKitFaceDetection", "MLImage", "MLKitVision", "Common"]),
   ],
   dependencies: [
     .package(url: "https://github.com/google/promises.git", exact: "2.4.0"),
-    .package(url: "https://github.com/google/GoogleDataTransport.git", exact: "9.4.0"),
-    .package(url: "https://github.com/google/GoogleUtilities.git", exact: "7.13.2"),
-    .package(url: "https://github.com/google/gtm-session-fetcher.git", exact: "3.4.1"),
+    .package(url: "https://github.com/google/GoogleDataTransport.git", exact: "10.1.0"),
+    .package(url: "https://github.com/google/GoogleUtilities.git", exact: "8.1.0"),
+    .package(url: "https://github.com/google/gtm-session-fetcher.git", exact: "3.5.0"),
     .package(url: "https://github.com/firebase/nanopb.git", exact: "2.30910.0"),
   ],
   targets: [
@@ -49,11 +49,11 @@ let package = Package(
       url:
         "https://github.com/d-date/google-mlkit-swiftpm/releases/download/6.0.0/MLImage.xcframework.zip",
       checksum: "3c4a161c260d4e3014bcf3bd80febf09aef417a4b6cc4154e316ae2ac886443e"),
-    .binaryTarget(
-      name: "MLKitBarcodeScanning",
-      url:
-        "https://github.com/d-date/google-mlkit-swiftpm/releases/download/6.0.0/MLKitBarcodeScanning.xcframework.zip",
-      checksum: "6514700529f77db2ad6bd899e7f5e70abccde09af9308f12c5cdcaaeb25e94fa"),
+//    .binaryTarget(
+//      name: "MLKitBarcodeScanning",
+//      url:
+//        "https://github.com/d-date/google-mlkit-swiftpm/releases/download/6.0.0/MLKitBarcodeScanning.xcframework.zip",
+//      checksum: "6514700529f77db2ad6bd899e7f5e70abccde09af9308f12c5cdcaaeb25e94fa"),
     .binaryTarget(
       name: "MLKitCommon",
       url:
